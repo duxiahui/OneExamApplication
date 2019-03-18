@@ -11,6 +11,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 
+import com.bumptech.glide.Glide;
 import com.example.model.Bean;
 import com.squareup.picasso.Picasso;
 
@@ -51,8 +52,8 @@ public class Myadapter extends RecyclerView.Adapter<Myadapter.MyViewHoder> {
     public void onBindViewHolder(@NonNull MyViewHoder myViewHoder, int i) {
         myViewHoder.t1.setText(list.get(i).getFood_str());
 
-        Picasso.with(context).load(list.get(i).getPic()).into(myViewHoder.imageView);// Glide 加载图片
-      //  Glide.with(context).load(list.get(i).getPic()).into(myViewHoder.imageView);
+      //  Picasso.with(context).load(list.get(i).getPic()).into(myViewHoder.imageView);// Glide 加载图片
+        Glide.with(context).load(list.get(i).getPic()).into(myViewHoder.imageView);
     }
 
     @Override

@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity implements ViewInfo {
         linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
         mMain_rv.setLayoutManager(linearLayoutManager);
         myadapter = new Myadapter(MainActivity.this);
+        mMain_rv.setAdapter(myadapter);
         map.put("stage_id","1");
         map.put("limit","20");
         map.put("page","1");

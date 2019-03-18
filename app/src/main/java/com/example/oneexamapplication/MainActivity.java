@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity implements ViewInfo {
 
      private RecyclerView mMain_rv;
      private Myadapter myadapter;
+     int a ;
     Map<String ,String> map = new HashMap<>();
     PresenterManager presenterManager;
 
